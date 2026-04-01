@@ -3,7 +3,14 @@
     <p id="CMG"> </p>
     <script>
       let pp = new URLSearchParams(window.location.search);
-      let ten = pp.get(
+      let ten = pp.get("txtTen");
+      let mn = pp.get("txtComment");
+      document.getElementById("CMG").innerHTML ="Cảm ơn bạn" +ten
+      + " đã đóng góp <br><br>Chúng tôi ghi nhận lời đóng góp của bạn:<br>" + yk;
+                    
     </script>
+    <form action="b7_nv2.html">
+      <input type="submit" name="back" value="Quay lại">
+    </form>
   </body>
 </html>
